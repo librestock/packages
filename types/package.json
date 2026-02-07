@@ -1,9 +1,14 @@
 {
   "name": "@librestock/types",
-  "version": "0.0.1",
-  "private": false,
+  "version": "0.1.0",
   "type": "module",
   "description": "Shared TypeScript interfaces and enums for LibreStock",
+  "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/librestock/packages.git",
+    "directory": "types"
+  },
   "exports": {
     ".": {
       "types": "./dist/esm/index.d.ts",
@@ -76,7 +81,6 @@
   "scripts": {
     "barrels": "node ./scripts/generate-barrels.mjs",
     "build": "tsc -p tsconfig.build.json && tsc -p tsconfig.build.cjs.json && echo '{\"type\":\"commonjs\"}' > dist/cjs/package.json",
-    "prepare": "pnpm build",
-    "postinstall": "pnpm build"
+    "prepare": "pnpm build"
   }
 }

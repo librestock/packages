@@ -1,8 +1,13 @@
 {
   "name": "@librestock/tsconfig",
-  "version": "0.0.1",
-  "private": false,
+  "version": "0.1.0",
   "description": "Shared TypeScript configurations for LibreStock Inventory monorepo",
+  "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/librestock/packages.git",
+    "directory": "tsconfig"
+  },
   "files": [
     "base.json",
     "nestjs.json"
