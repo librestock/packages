@@ -1,8 +1,13 @@
 {
   "name": "@librestock/eslint-config",
-  "version": "0.0.1",
-  "private": true,
+  "version": "0.1.0",
   "description": "Shared ESLint configurations for LibreStock Inventory monorepo",
+  "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/librestock/packages.git",
+    "directory": "eslint-config"
+  },
   "type": "module",
   "main": "./index.js",
   "exports": {
