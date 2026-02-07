@@ -1,7 +1,7 @@
 {
   "name": "@librestock/types",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "type": "module",
   "description": "Shared TypeScript interfaces and enums for LibreStock",
   "exports": {

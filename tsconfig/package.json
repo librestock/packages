@@ -1,7 +1,7 @@
 {
   "name": "@librestock/tsconfig",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "description": "Shared TypeScript configurations for LibreStock Inventory monorepo",
   "files": [
     "base.json",
