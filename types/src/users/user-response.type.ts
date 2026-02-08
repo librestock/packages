@@ -1,4 +1,4 @@
-import type { UserRole } from '../auth/user-role.enum'
+import type { UserRole } from '../auth/user-role.enum.js'
 
 export interface UserResponseDto {
   id: string

@@ -1,4 +1,4 @@
-import type { BaseResponseDto } from '../common/base-response.type'
+import type { BaseResponseDto } from '../common/base-response.type.js'
 
 export interface CategoryWithChildrenResponseDto extends BaseResponseDto {
   id: string

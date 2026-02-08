@@ -13,7 +13,7 @@ const folders = readdirSync(root)
 const isExportable = (name) =>
   (name.endsWith('.type.ts') || name.endsWith('.enum.ts')) && name !== 'index.ts'
 
-const exportLine = (file) => `export * from './${file.replace(/\.ts$/, '')}'\n`
+const exportLine = (file) => `export * from './${file.replace(/\.ts$/, '.js')}'\n`
 
 for (const folder of folders) {
   const dir = join(root, folder)
@@ -25,7 +25,7 @@ for (const folder of folders) {
   writeFileSync(join(dir, 'index.ts'), lines)
 }
 
-const rootLines = folders.map((name) => `export * from './${name}'\n`).join('')
+const rootLines = folders.map((name) => `export * from './${name}/index.js'\n`).join('')
 writeFileSync(join(root, 'index.ts'), rootLines)
 
 console.log('Generated barrels for:', folders.join(', '))

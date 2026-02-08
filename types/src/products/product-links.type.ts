@@ -1,4 +1,4 @@
-import type { HateoasLink } from '../common/hateoas-link.type'
+import type { HateoasLink } from '../common/hateoas-link.type.js'
 
 export interface ProductLinksDto {
   self: HateoasLink

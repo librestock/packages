@@ -1,4 +1,4 @@
-import type { StockMovementReason } from './stock-movement-reason.enum'
+import type { StockMovementReason } from './stock-movement-reason.enum.js'
 
 export interface StockMovementLocationSummary {
   id: string
