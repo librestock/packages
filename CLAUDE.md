@@ -15,6 +15,12 @@ Shared TypeScript interfaces and enums (`@librestock/types`). Dual ESM/CJS build
 
 **Domain modules:** areas, audit-logs, auth, branding, categories, common, inventory, locations, products.
 
+**Key auth types:**
+- `UserRole` enum: `ADMIN`, `WAREHOUSE_MANAGER`, `PICKER`, `SALES`
+- `Resource` enum: `DASHBOARD`, `STOCK`, `PRODUCTS`, `LOCATIONS`, `INVENTORY`, `AUDIT_LOGS`, `USERS`, `SETTINGS`
+- `Permission` enum: `READ`, `WRITE`
+- `CurrentUserResponseDto` (id, name, email, image, roles), `ProfileResponseDto`, `SessionClaimsResponseDto`
+
 **Build:**
 ```bash
 pnpm --filter @librestock/types build

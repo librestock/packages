@@ -10,4 +10,5 @@ export enum AuditEntityType {
   PHOTO = 'PHOTO',
   AREA = 'AREA',
   CLIENT = 'CLIENT',
+  ROLE = 'ROLE',
 }

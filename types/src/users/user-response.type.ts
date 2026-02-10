@@ -1,11 +1,9 @@
-import type { UserRole } from '../auth/user-role.enum.js'
-
 export interface UserResponseDto {
   id: string
   name: string
   email: string
   image: string | null
-  roles: UserRole[]
+  roles: string[]
   banned: boolean
   banReason: string | null
   banExpires: string | Date | null

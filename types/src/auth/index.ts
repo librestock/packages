@@ -1,3 +1,5 @@
+export * from './current-user-response.type.js'
+export * from './permission.enum.js'
 export * from './profile-response.type.js'
+export * from './resource.enum.js'
 export * from './session-claims-response.type.js'
-export * from './user-role.enum.js'

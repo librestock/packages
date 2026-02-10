@@ -1,6 +1,6 @@
 import js from '@eslint/js'
 import prettierConfig from 'eslint-config-prettier'
-import pluginImport from 'eslint-plugin-import'
+import pluginImport from 'eslint-plugin-import-x'
 import pluginPromise from 'eslint-plugin-promise'
 import pluginUnicorn from 'eslint-plugin-unicorn'
 import globals from 'globals'
@@ -37,16 +37,16 @@ export default tseslint.config(
   // Import plugin configuration
   {
     plugins: {
-      import: pluginImport,
+      'import-x': pluginImport,
     },
     rules: {
-      'import/order': 'error',
-      'import/no-duplicates': 'error',
-      'import/no-cycle': 'error',
-      'import/no-self-import': 'error',
-      'import/first': 'error',
-      'import/newline-after-import': 'error',
-      'import/no-mutable-exports': 'error',
+      'import-x/order': 'error',
+      'import-x/no-duplicates': 'error',
+      'import-x/no-cycle': 'error',
+      'import-x/no-self-import': 'error',
+      'import-x/first': 'error',
+      'import-x/newline-after-import': 'error',
+      'import-x/no-mutable-exports': 'error',
     },
   },
 
