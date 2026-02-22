@@ -3,7 +3,6 @@ export interface CreateProductDto {
   name: string
   description?: string | null
   category_id: string
-  brand_id?: string | null
   volume_ml?: number | null
   weight_kg?: number | null
   dimensions_cm?: string | null

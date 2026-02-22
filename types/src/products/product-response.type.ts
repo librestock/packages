@@ -10,7 +10,6 @@ export interface ProductResponseDto extends BaseAuditResponseDto {
   description: string | null
   category_id: string
   category?: CategorySummaryDto | null
-  brand_id: string | null
   volume_ml: number | null
   weight_kg: number | null
   dimensions_cm: string | null

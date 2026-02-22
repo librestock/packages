@@ -6,7 +6,6 @@ export interface ProductQueryDto {
   limit?: number
   search?: string
   category_id?: string
-  brand_id?: string
   primary_supplier_id?: string
   is_active?: boolean
   is_perishable?: boolean
