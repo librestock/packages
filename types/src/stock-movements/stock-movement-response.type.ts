@@ -1,30 +1,37 @@
 import type { StockMovementReason } from './stock-movement-reason.enum.js'
+import type {
+  LocationId,
+  OrderId,
+  ProductId,
+  StockMovementId,
+  UserId,
+} from '../common/entity-id.type.js'
 
 export interface StockMovementLocationSummary {
-  id: string
+  id: LocationId
   name: string
 }
 
 export interface StockMovementProductSummary {
-  id: string
+  id: ProductId
   name: string
   sku: string
 }
 
 export interface StockMovementResponseDto {
-  id: string
-  product_id: string
+  id: StockMovementId
+  product_id: ProductId
   product: StockMovementProductSummary | null
-  from_location_id: string | null
+  from_location_id: LocationId | null
   from_location: StockMovementLocationSummary | null
-  to_location_id: string | null
+  to_location_id: LocationId | null
   to_location: StockMovementLocationSummary | null
   quantity: number
   reason: StockMovementReason
-  order_id: string | null
+  order_id: OrderId | null
   reference_number: string | null
   cost_per_unit: number | null
-  user_id: string
+  user_id: UserId
   notes: string | null
   created_at: string | Date
 }

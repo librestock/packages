@@ -1,8 +1,15 @@
 import { OrderStatus } from './order-status.enum.js';
+import type {
+  ClientId,
+  OrderId,
+  OrderItemId,
+  ProductId,
+  UserId,
+} from '../common/entity-id.type.js'
 
 export interface OrderItemResponseType {
-  id: string;
-  product_id: string;
+  id: OrderItemId
+  product_id: ProductId
   product_name: string | null;
   product_sku: string | null;
   quantity: number;
@@ -16,9 +23,9 @@ export interface OrderItemResponseType {
 }
 
 export interface OrderResponseType {
-  id: string;
+  id: OrderId
   order_number: string;
-  client_id: string;
+  client_id: ClientId
   client_name: string | null;
   status: OrderStatus;
   delivery_address: string;
@@ -26,8 +33,8 @@ export interface OrderResponseType {
   yacht_name: string | null;
   special_instructions: string | null;
   total_amount: number;
-  assigned_to: string | null;
-  created_by: string;
+  assigned_to: UserId | null
+  created_by: UserId
   confirmed_at: Date | null;
   shipped_at: Date | null;
   delivered_at: Date | null;
