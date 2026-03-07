@@ -1,7 +1,13 @@
+import type {
+  AreaId,
+  LocationId,
+  ProductId,
+} from '../common/entity-id.type.js'
+
 export interface CreateInventoryDto {
-  product_id: string
-  location_id: string
-  area_id?: string | null
+  product_id: ProductId
+  location_id: LocationId
+  area_id?: AreaId | null
   quantity: number
   batchNumber?: string
   expiry_date?: string | null

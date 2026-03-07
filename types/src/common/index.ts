@@ -1,4 +1,5 @@
 export * from './base-response.type.js'
+export * from './entity-id.type.js'
 export * from './error-response.type.js'
 export * from './hateoas-link.type.js'
 export * from './message-response.type.js'

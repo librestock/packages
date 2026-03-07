@@ -1,6 +1,8 @@
+import type { AreaId, LocationId } from '../common/entity-id.type.js'
+
 export interface UpdateInventoryDto {
-  location_id?: string
-  area_id?: string | null
+  location_id?: LocationId
+  area_id?: AreaId | null
   quantity?: number
   batchNumber?: string
   expiry_date?: string | null
