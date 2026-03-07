@@ -7,7 +7,7 @@ import type {
   UserId,
 } from '../common/entity-id.type.js'
 
-export interface OrderItemResponseType {
+export interface OrderItemResponseDto {
   id: OrderItemId
   product_id: ProductId
   product_name: string | null;
@@ -22,7 +22,7 @@ export interface OrderItemResponseType {
   updated_at: Date;
 }
 
-export interface OrderResponseType {
+export interface OrderResponseDto {
   id: OrderId
   order_number: string;
   client_id: ClientId
@@ -39,7 +39,11 @@ export interface OrderResponseType {
   shipped_at: Date | null;
   delivered_at: Date | null;
   kanban_task_id: string | null;
-  items: OrderItemResponseType[];
+  items: OrderItemResponseDto[];
   created_at: Date;
   updated_at: Date;
 }
+
+// Backward-compatible aliases (deprecated).
+export type OrderItemResponseType = OrderItemResponseDto
+export type OrderResponseType = OrderResponseDto
