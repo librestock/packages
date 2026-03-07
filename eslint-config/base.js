@@ -47,6 +47,18 @@ export default tseslint.config(
       'import-x/first': 'error',
       'import-x/newline-after-import': 'error',
       'import-x/no-mutable-exports': 'error',
+      'no-restricted-imports': [
+        'error',
+        {
+          paths: [
+            {
+              name: '@librestock/types',
+              message:
+                'Use explicit subpath imports, e.g. @librestock/types/<domain>.',
+            },
+          ],
+        },
+      ],
     },
   },
 

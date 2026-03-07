@@ -10,12 +10,6 @@
     "directory": "types"
   },
   "exports": {
-    ".": {
-      "types": "./dist/esm/index.d.ts",
-      "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js",
-      "default": "./dist/esm/index.js"
-    },
     "./areas": {
       "types": "./dist/esm/areas/index.d.ts",
       "import": "./dist/esm/areas/index.js",
@@ -46,6 +40,12 @@
       "require": "./dist/cjs/categories/index.js",
       "default": "./dist/esm/categories/index.js"
     },
+    "./clients": {
+      "types": "./dist/esm/clients/index.d.ts",
+      "import": "./dist/esm/clients/index.js",
+      "require": "./dist/cjs/clients/index.js",
+      "default": "./dist/esm/clients/index.js"
+    },
     "./common": {
       "types": "./dist/esm/common/index.d.ts",
       "import": "./dist/esm/common/index.js",
@@ -64,22 +64,56 @@
       "require": "./dist/cjs/locations/index.js",
       "default": "./dist/esm/locations/index.js"
     },
+    "./orders": {
+      "types": "./dist/esm/orders/index.d.ts",
+      "import": "./dist/esm/orders/index.js",
+      "require": "./dist/cjs/orders/index.js",
+      "default": "./dist/esm/orders/index.js"
+    },
+    "./photos": {
+      "types": "./dist/esm/photos/index.d.ts",
+      "import": "./dist/esm/photos/index.js",
+      "require": "./dist/cjs/photos/index.js",
+      "default": "./dist/esm/photos/index.js"
+    },
     "./products": {
       "types": "./dist/esm/products/index.d.ts",
       "import": "./dist/esm/products/index.js",
       "require": "./dist/cjs/products/index.js",
       "default": "./dist/esm/products/index.js"
+    },
+    "./roles": {
+      "types": "./dist/esm/roles/index.d.ts",
+      "import": "./dist/esm/roles/index.js",
+      "require": "./dist/cjs/roles/index.js",
+      "default": "./dist/esm/roles/index.js"
+    },
+    "./stock-movements": {
+      "types": "./dist/esm/stock-movements/index.d.ts",
+      "import": "./dist/esm/stock-movements/index.js",
+      "require": "./dist/cjs/stock-movements/index.js",
+      "default": "./dist/esm/stock-movements/index.js"
+    },
+    "./suppliers": {
+      "types": "./dist/esm/suppliers/index.d.ts",
+      "import": "./dist/esm/suppliers/index.js",
+      "require": "./dist/cjs/suppliers/index.js",
+      "default": "./dist/esm/suppliers/index.js"
+    },
+    "./users": {
+      "types": "./dist/esm/users/index.d.ts",
+      "import": "./dist/esm/users/index.js",
+      "require": "./dist/cjs/users/index.js",
+      "default": "./dist/esm/users/index.js"
     }
   },
-  "types": "./dist/esm/index.d.ts",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.js",
   "files": [
     "dist"
   ],
   "sideEffects": false,
   "scripts": {
     "barrels": "node ./scripts/generate-barrels.mjs",
+    "codemod:subpath-imports": "node ./scripts/rewrite-root-imports.mjs",
     "build": "tsc -p tsconfig.build.json && tsc -p tsconfig.build.cjs.json && echo '{\"type\":\"commonjs\"}' > dist/cjs/package.json",
     "prepare": "pnpm build"
   }
