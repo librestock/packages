@@ -110,6 +110,9 @@
   "files": [
     "dist"
   ],
+  "dependencies": {
+    "zod": "^4.3.6"
+  },
   "sideEffects": false,
   "scripts": {
     "barrels": "node ./scripts/generate-barrels.mjs",
