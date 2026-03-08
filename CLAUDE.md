@@ -13,9 +13,10 @@ Before starting work on any issue, ensure it is added to the **[LibreStock Impro
   pnpm --filter @librestock/types build
   ```
   Forgetting the barrels step means new exports won't be available to consumers.
-- **Package releases** are tag-driven. When you're ready to publish a package, bump its `package.json` version, merge to `main`, then create and push a matching tag:
+- **Package releases** are version-bump driven. If you change `types/`, `eslint-config/`, or `tsconfig/`, bump that package's `package.json` version in the same PR. After the PR merges to `main`, CI creates the matching tag automatically and the tag-triggered publish workflow releases the package to npm.
+- The generated tags use these formats:
   ```bash
-  git tag types@0.1.1
-  git push origin types@0.1.1
+  types@0.1.1
+  eslint-config@0.1.1
+  tsconfig@0.1.1
   ```
-  Supported tag formats are `types@x.y.z`, `eslint-config@x.y.z`, and `tsconfig@x.y.z`. The release workflow validates that the tag version matches the target package's `package.json` before publishing to npm.
