@@ -1,6 +1,6 @@
 {
   "name": "@librestock/tsconfig",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Shared TypeScript configurations for LibreStock Inventory monorepo",
   "license": "AGPL-3.0",
   "repository": {
