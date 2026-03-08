@@ -5,7 +5,7 @@ export interface UserResponseDto {
   image: string | null
   roles: string[]
   banned: boolean
-  ban_reason: string | null
-  ban_expires: string | Date | null
-  created_at: string | Date
+  banReason: string | null
+  banExpires: string | Date | null
+  createdAt: string | Date
 }

@@ -1,8 +1,4 @@
-declare const entityIdBrand: unique symbol
-
-export type EntityId<Brand extends string> = string & {
-  readonly [entityIdBrand]: Brand
-}
+export type EntityId<Brand extends string> = Brand extends string ? string : never
 
 export type ProductId = EntityId<'ProductId'>
 export type LocationId = EntityId<'LocationId'>

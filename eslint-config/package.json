@@ -15,6 +15,9 @@
     "./base": "./base.js",
     "./nestjs": "./nestjs.js"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "*.js"
   ],

@@ -1,0 +1,4 @@
+packages:
+  - "eslint-config"
+  - "tsconfig"
+  - "types"
