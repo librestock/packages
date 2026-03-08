@@ -22,17 +22,5 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      - name: Require changeset for package changes
-        if: github.event_name == 'pull_request'
-        run: |
-          git fetch origin "${{ github.base_ref }}" --depth=1
-          changed_files="$(git diff --name-only "origin/${{ github.base_ref }}...HEAD")"
-          if printf '%s\n' "$changed_files" | grep -Eq '^(types|eslint-config|tsconfig)/'; then
-            if ! printf '%s\n' "$changed_files" | grep -Eq '^\.changeset/.+\.md$'; then
-              echo "Package changes require a changeset file in .changeset/."
-              exit 1
-            fi
-          fi
-
       - name: Build packages
         run: pnpm build

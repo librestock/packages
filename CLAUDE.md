@@ -13,8 +13,9 @@ Before starting work on any issue, ensure it is added to the **[LibreStock Impro
   pnpm --filter @librestock/types build
   ```
   Forgetting the barrels step means new exports won't be available to consumers.
-- **Package releases** are managed with Changesets from the repo root. If you change `types/`, `eslint-config/`, or `tsconfig/`, add a changeset before merging:
+- **Package releases** are tag-driven. When you're ready to publish a package, bump its `package.json` version, merge to `main`, then create and push a matching tag:
   ```bash
-  pnpm changeset
+  git tag types@0.1.1
+  git push origin types@0.1.1
   ```
-  The release workflow will open or update the automated release PR on `main` and publish changed packages to npm after that PR is merged.
+  Supported tag formats are `types@x.y.z`, `eslint-config@x.y.z`, and `tsconfig@x.y.z`. The release workflow validates that the tag version matches the target package's `package.json` before publishing to npm.
