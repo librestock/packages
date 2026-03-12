@@ -11,7 +11,7 @@ const folders = readdirSync(root)
   .sort((a, b) => a.localeCompare(b))
 
 const isExportable = (name) =>
-  (name.endsWith('.type.ts') || name.endsWith('.enum.ts')) && name !== 'index.ts'
+  (name.endsWith('.type.ts') || name.endsWith('.enum.ts') || name.endsWith('.schema.ts')) && name !== 'index.ts'
 
 const exportLine = (file) => `export * from './${file.replace(/\.ts$/, '.js')}'\n`
 
