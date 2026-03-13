@@ -1,4 +1,4 @@
-import type { UserId } from '../common/entity-id.type.js'
+import type { UserId } from '../common/entity-id.type'
 
 export interface UpdateOrderType {
   delivery_address?: string;

@@ -1,6 +1,6 @@
 {
   "name": "@librestock/types",
-  "version": "1.1.6",
+  "version": "1.2.0",
   "type": "module",
   "description": "Shared TypeScript interfaces and enums for LibreStock",
   "license": "AGPL-3.0",
@@ -114,6 +114,58 @@
       "import": "./dist/esm/users/index.js",
       "require": "./dist/cjs/users/index.js",
       "default": "./dist/esm/users/index.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "areas": [
+        "dist/esm/areas/index.d.ts"
+      ],
+      "audit-logs": [
+        "dist/esm/audit-logs/index.d.ts"
+      ],
+      "auth": [
+        "dist/esm/auth/index.d.ts"
+      ],
+      "branding": [
+        "dist/esm/branding/index.d.ts"
+      ],
+      "categories": [
+        "dist/esm/categories/index.d.ts"
+      ],
+      "clients": [
+        "dist/esm/clients/index.d.ts"
+      ],
+      "common": [
+        "dist/esm/common/index.d.ts"
+      ],
+      "inventory": [
+        "dist/esm/inventory/index.d.ts"
+      ],
+      "locations": [
+        "dist/esm/locations/index.d.ts"
+      ],
+      "orders": [
+        "dist/esm/orders/index.d.ts"
+      ],
+      "photos": [
+        "dist/esm/photos/index.d.ts"
+      ],
+      "products": [
+        "dist/esm/products/index.d.ts"
+      ],
+      "roles": [
+        "dist/esm/roles/index.d.ts"
+      ],
+      "stock-movements": [
+        "dist/esm/stock-movements/index.d.ts"
+      ],
+      "suppliers": [
+        "dist/esm/suppliers/index.d.ts"
+      ],
+      "users": [
+        "dist/esm/users/index.d.ts"
+      ]
     }
   },
   "files": [

@@ -1,5 +1,5 @@
-import type { Permission } from './permission.enum.js'
-import type { Resource } from './resource.enum.js'
+import type { Permission } from './permission.enum'
+import type { Resource } from './resource.enum'
 
 export interface CurrentUserResponseDto {
   id: string

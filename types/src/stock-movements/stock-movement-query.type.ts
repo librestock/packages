@@ -1,5 +1,5 @@
-import type { StockMovementReason } from './stock-movement-reason.enum.js'
-import type { LocationId, ProductId } from '../common/entity-id.type.js'
+import type { StockMovementReason } from './stock-movement-reason.enum'
+import type { LocationId, ProductId } from '../common/entity-id.type'
 
 export interface StockMovementQueryDto {
   page?: number

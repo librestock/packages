@@ -1,4 +1,4 @@
-import type { RolePermissionDto } from './role-permission.type.js'
+import type { RolePermissionDto } from './role-permission.type'
 
 export interface CreateRoleDto {
   name: string

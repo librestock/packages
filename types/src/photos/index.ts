@@ -1,1 +1,1 @@
-export * from './photo-response.type.js'
+export * from './photo-response.type'

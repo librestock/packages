@@ -1,4 +1,4 @@
-import type { ClientStatus } from './client-status.enum.js'
+import type { ClientStatus } from './client-status.enum'
 
 export interface UpdateClientDto {
   company_name?: string

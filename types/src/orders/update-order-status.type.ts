@@ -1,4 +1,4 @@
-import { OrderStatus } from './order-status.enum.js';
+import { OrderStatus } from './order-status.enum';
 
 export interface UpdateOrderStatusType {
   status: OrderStatus;

@@ -2,7 +2,7 @@ import { Schema } from 'effect'
 import {
   NonNegativeNumberSchema,
   PositiveIntSchema,
-} from '../common/schema-helpers.schema.js'
+} from '../common/schema-helpers.schema'
 
 export const CreateOrderItemSchema = Schema.Struct({
   product_id: Schema.UUID,

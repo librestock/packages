@@ -1,4 +1,4 @@
-import type { ClientId, ProductId } from '../common/entity-id.type.js'
+import type { ClientId, ProductId } from '../common/entity-id.type'
 
 export interface CreateOrderItemType {
   product_id: ProductId

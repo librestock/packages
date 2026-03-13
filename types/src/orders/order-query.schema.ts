@@ -1,10 +1,10 @@
 import { Schema } from 'effect'
-import { OrderStatus } from './order-status.enum.js'
+import { OrderStatus } from './order-status.enum'
 import {
   LimitSchema,
   NullableTrimmedString,
   PageSchema,
-} from '../common/schema-helpers.schema.js'
+} from '../common/schema-helpers.schema'
 
 const OrderStatusValues = [
   OrderStatus.DRAFT,

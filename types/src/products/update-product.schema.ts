@@ -1,5 +1,5 @@
 import { z } from 'zod/v4'
-import { CreateProductBaseSchema } from './create-product.schema.js'
+import { CreateProductBaseSchema } from './create-product.schema'
 
 export const UpdateProductSchema = CreateProductBaseSchema.partial().superRefine(
   (dto, ctx) => {

@@ -1,4 +1,4 @@
-import type { ErrorCode } from './error-code.enum.js'
+import type { ErrorCode } from './error-code.enum'
 
 export enum ErrorType {
   BAD_REQUEST = 'BadRequest',

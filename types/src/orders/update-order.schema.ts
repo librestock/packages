@@ -1,5 +1,5 @@
 import { Schema } from 'effect'
-import { NullableMaxLength200String } from '../common/schema-helpers.schema.js'
+import { NullableMaxLength200String } from '../common/schema-helpers.schema'
 
 export const UpdateOrderSchema = Schema.Struct({
   delivery_address: Schema.optional(Schema.Trim),

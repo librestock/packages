@@ -1,5 +1,5 @@
 import { Schema } from 'effect'
-import { OrderStatus } from './order-status.enum.js'
+import { OrderStatus } from './order-status.enum'
 
 const OrderStatusValues = [
   OrderStatus.DRAFT,

@@ -1,11 +1,11 @@
-import { OrderStatus } from './order-status.enum.js';
+import { OrderStatus } from './order-status.enum';
 import type {
   ClientId,
   OrderId,
   OrderItemId,
   ProductId,
   UserId,
-} from '../common/entity-id.type.js'
+} from '../common/entity-id.type'
 
 export interface OrderItemResponseDto {
   id: OrderItemId

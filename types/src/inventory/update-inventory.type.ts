@@ -1,4 +1,4 @@
-import type { AreaId, LocationId } from '../common/entity-id.type.js'
+import type { AreaId, LocationId } from '../common/entity-id.type'
 
 export interface UpdateInventoryDto {
   location_id?: LocationId

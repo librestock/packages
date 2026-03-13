@@ -2,7 +2,7 @@ import type {
   AreaId,
   LocationId,
   ProductId,
-} from '../common/entity-id.type.js'
+} from '../common/entity-id.type'
 
 export interface CreateInventoryDto {
   product_id: ProductId

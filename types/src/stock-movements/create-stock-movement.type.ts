@@ -1,9 +1,9 @@
-import type { StockMovementReason } from './stock-movement-reason.enum.js'
+import type { StockMovementReason } from './stock-movement-reason.enum'
 import type {
   LocationId,
   OrderId,
   ProductId,
-} from '../common/entity-id.type.js'
+} from '../common/entity-id.type'
 
 export interface CreateStockMovementDto {
   product_id: ProductId

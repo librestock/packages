@@ -1,11 +1,11 @@
-import type { StockMovementReason } from './stock-movement-reason.enum.js'
+import type { StockMovementReason } from './stock-movement-reason.enum'
 import type {
   LocationId,
   OrderId,
   ProductId,
   StockMovementId,
   UserId,
-} from '../common/entity-id.type.js'
+} from '../common/entity-id.type'
 
 export interface StockMovementLocationSummary {
   id: LocationId

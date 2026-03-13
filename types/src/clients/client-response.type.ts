@@ -1,5 +1,5 @@
-import type { BaseResponseDto } from '../common/base-response.type.js'
-import type { ClientStatus } from './client-status.enum.js'
+import type { BaseResponseDto } from '../common/base-response.type'
+import type { ClientStatus } from './client-status.enum'
 
 export interface ClientResponseDto extends BaseResponseDto {
   id: string

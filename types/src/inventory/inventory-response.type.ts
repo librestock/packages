@@ -1,13 +1,13 @@
-import type { BaseResponseDto } from '../common/base-response.type.js'
+import type { BaseResponseDto } from '../common/base-response.type'
 import type {
   AreaId,
   InventoryId,
   LocationId,
   ProductId,
-} from '../common/entity-id.type.js'
-import type { AreaSummaryDto } from './area-summary.type.js'
-import type { LocationSummaryDto } from './location-summary.type.js'
-import type { ProductSummaryDto } from './product-summary.type.js'
+} from '../common/entity-id.type'
+import type { AreaSummaryDto } from './area-summary.type'
+import type { LocationSummaryDto } from './location-summary.type'
+import type { ProductSummaryDto } from './product-summary.type'
 
 export interface InventoryResponseDto extends BaseResponseDto {
   id: InventoryId

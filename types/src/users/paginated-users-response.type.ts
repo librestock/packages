@@ -1,5 +1,5 @@
-import type { PaginationMeta } from '../common/pagination-meta.type.js'
-import type { UserResponseDto } from './user-response.type.js'
+import type { PaginationMeta } from '../common/pagination-meta.type'
+import type { UserResponseDto } from './user-response.type'
 
 export interface PaginatedUsersResponseDto {
   data: UserResponseDto[]

@@ -1,5 +1,5 @@
-import { OrderStatus } from './order-status.enum.js';
-import type { ClientId } from '../common/entity-id.type.js'
+import { OrderStatus } from './order-status.enum';
+import type { ClientId } from '../common/entity-id.type'
 
 export interface OrderQueryType {
   page?: number;
