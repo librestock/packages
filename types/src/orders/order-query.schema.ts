@@ -2,7 +2,6 @@ import { Schema } from 'effect'
 import { OrderStatus } from './order-status.enum'
 import {
   LimitSchema,
-  NullableTrimmedString,
   PageSchema,
 } from '../common/schema-helpers.schema'
 
@@ -21,7 +20,7 @@ const OrderStatusValues = [
 export const OrderQuerySchema = Schema.Struct({
   page: Schema.optionalWith(PageSchema, { default: () => 1 }),
   limit: Schema.optionalWith(LimitSchema, { default: () => 20 }),
-  q: Schema.optional(NullableTrimmedString),
+  q: Schema.optional(Schema.Trim),
   client_id: Schema.optional(Schema.UUID),
   status: Schema.optional(Schema.Literal(...OrderStatusValues)),
   date_from: Schema.optional(Schema.DateFromString),
