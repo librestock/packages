@@ -4,7 +4,6 @@ export interface PhotoResponseDto {
   filename: string
   mimetype: string
   size: number
-  storage_path: string
   uploaded_by: string | null
   display_order: number
   created_at: Date

@@ -190,14 +190,15 @@
     "effect": "^3.19.0"
   },
   "devDependencies": {
-    "effect": "^3.19.19",
-    "typescript": "^5.9.3"
+    "effect": "^3.21.0",
+    "typescript": "^6.0.2"
   },
   "sideEffects": false,
   "scripts": {
     "barrels": "node ./scripts/generate-barrels.mjs",
     "codemod:subpath-imports": "node ./scripts/rewrite-root-imports.mjs",
     "build": "tsc -p tsconfig.build.json && tsc -p tsconfig.build.cjs.json && echo '{\"type\":\"commonjs\"}' > dist/cjs/package.json",
+    "dev": "tsc -p tsconfig.build.json --watch",
     "prepare": "pnpm build"
   }
 }

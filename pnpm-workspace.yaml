@@ -1,4 +1,7 @@
 packages:
-  - "eslint-config"
-  - "tsconfig"
-  - "types"
+  - eslint-config
+  - tsconfig
+  - types
+
+onlyBuiltDependencies:
+  - unrs-resolver
