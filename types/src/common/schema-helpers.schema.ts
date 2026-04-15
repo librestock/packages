@@ -23,3 +23,7 @@ export const NullableTrimmedString = Schema.NullOr(Schema.Trim)
 export const NullableMaxLength200String = Schema.NullOr(
   Schema.Trim.pipe(Schema.maxLength(200)),
 )
+
+export const EmailSchema = Schema.Trim.pipe(
+  Schema.pattern(/^[^\s@]+@[^\s@]+\.[^\s@]+$/),
+)
