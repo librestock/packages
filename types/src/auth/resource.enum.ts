@@ -1,6 +1,5 @@
 export enum Resource {
   DASHBOARD = 'dashboard',
-  STOCK = 'stock',
   ORDERS = 'orders',
   CLIENTS = 'clients',
   SUPPLIERS = 'suppliers',
